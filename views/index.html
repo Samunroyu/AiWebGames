@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO 优化 -->
+    <title>GamePods - Play HTML5 Games Online</title>
+    <meta name="description" content="Free online HTML5 games categorized by action, puzzle, strategy and more. Play directly in your browser!">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- 搜索栏 -->
+    <header class="container mx-auto px-4 py-6">
+        <form id="searchForm" class="mb-8">
+            <div class="flex gap-2">
+                <input type="search" 
+                       id="gameSearch" 
+                       placeholder="Search games..." 
+                       class="flex-1 rounded-lg px-4 py-3 text-gray-900">
+                <button type="submit" 
+                        class="bg-blue-600 hover:bg-blue-700 px-6 rounded-lg">
+                    Search
+                </button>
+            </div>
+        </form>
+
+        <!-- 分类导航 -->
+        <nav id="categories" class="mb-8 flex flex-wrap gap-2">
+            <!-- 通过 JS 动态加载 -->
+        </nav>
+
+        <!-- 游戏展示区 -->
+        <div id="gameGrid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- 动态加载游戏卡片 -->
+        </div>
+    </header>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
